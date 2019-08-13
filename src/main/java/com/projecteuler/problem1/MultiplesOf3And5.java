@@ -39,12 +39,11 @@ public class MultiplesOf3And5 {
 
     /**
      *
-     * @param target
      * @return
      */
-    public Integer sumMultiplesOf3And5Bellow1000(Integer target) {
+    public Integer sumMultiplesOf3And5Bellow1000() {
         MultiplesOf3And5 m = new MultiplesOf3And5();
-        return m.sumDivisibleBy(3, target) + m.sumDivisibleBy(5, target) - m.sumDivisibleBy(15, target);
+        return m.sumDivisibleBy(3, 999) + m.sumDivisibleBy(5, 999) - m.sumDivisibleBy(15, 999);
     }
 
     /**
@@ -68,7 +67,7 @@ public class MultiplesOf3And5 {
     public static void main(String arg[]) {
         MultiplesOf3And5 m = new MultiplesOf3And5();
         System.out.println(m.sumMultiplesOf3And5(999));
-        System.out.println(m.sumMultiplesOf3And5Bellow1000(999));
+        System.out.println(m.sumMultiplesOf3And5Bellow1000());
     }
 }
 
